@@ -25,10 +25,10 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <Header
-          backgroundColor={'#9c8210'}
+          backgroundColor={'#634527'}
           centerComponent={{
-            text: 'Macaquinho Fofo',
-            style: { color: '#fff', fontSize: 20 },
+            text: 'Cute Monkey',
+            style: { color: '#fff', fontSize: 21 },
           }}
         />
 
@@ -55,7 +55,7 @@ export default class App extends React.Component {
             this.setState({ chunks: db[word].chunks }),
             this.setState({ phonicSounds: db[word].phones })
             ):
-            Alert.alert("A palavra não existe em nosso banco de dados");
+            Alert.alert("Procure essa palavra no google <3");
           }}>
           <Text style={styles.buttonText}>IR</Text>
         </TouchableOpacity>
